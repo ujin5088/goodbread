@@ -1,0 +1,324 @@
+@charset "utf-8";
+
+@font-face {
+  font-family: 'IBMPlexSansKR-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/IBMPlexSansKR-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+*{font-family: 'IBMPlexSansKR-Regular';
+  }
+
+html{
+    scroll-behavior: smooth;
+}
+  
+body{
+  margin: 0;
+}
+
+p{
+  font-size: 0.8rem;
+}
+
+a{ 
+  text-decoration: none;
+  color: black;
+}
+
+.nav{
+  text-align: center;
+}
+
+.nav img{
+  margin-bottom: -10px;
+}
+
+.nav hr{ 
+  /* 상단바 회색 테두리 */
+  border: solid 1px gainsboro;
+  margin: 0;
+}
+
+.menu{
+  list-style-type:none;
+  padding-left: 0px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  
+}
+
+.menu li{
+  font-size: 1.2rem;
+  font-weight: bold;
+  display: inline;
+  padding: 0px 70px 0px 70px;
+  margin: 2px 0px 2px 0px;
+  border-left: 1px solid black ;
+}
+
+
+
+.nav-toggleBtn{
+   /* 토글버튼 */
+  display: none;
+  position: absolute;
+  right: 32px;
+  font-size: 24px;
+  margin:60px 0;
+}
+
+
+
+  .section1{
+    padding: 30px 0;
+  }
+
+  .section1 h1{
+    text-align: center;
+  }
+
+  .section1 hr{
+    border: 1.2px solid black;
+    margin-top: -5px;
+    width: 2%;
+  }
+
+
+
+  .who{
+    margin-top: -30px;
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    align-items: center;     
+  }
+
+  .introduce p:nth-of-type(1){
+    font-size: 2rem;
+    font-weight: bold;
+    
+  }
+
+  .introduce p{
+    margin-top: 40px;
+    line-height: 28px;
+  }
+
+  .introduce>p>span{
+    font-size: 25px;
+
+  }
+
+   /* 해시태그 스타일 */
+  .introduce>h4>span{
+    color: white;
+    padding: 1.5% 3%;
+    border-radius: 20px;
+    margin-right: 5px;
+    background-color:#573a1a;
+  }
+
+  .section2{
+    padding: 30px 0;
+    text-align: center; 
+    background-color:#ffabab;
+  }
+
+
+  .section2 img{
+    margin-top: -30px;
+  }
+
+  .section2 hr{
+    border: 1.2px solid black;
+    margin-top: -5px;
+    width: 2%;
+  }
+
+  .section3{
+    padding: 30px 0;
+  }
+
+  .section3 h1{
+    text-align: center;
+  }
+
+  .section3 hr{
+    border: 1.2px solid black;
+    margin-top: -5px;
+    width: 2%;
+  }
+
+  .explain-section{
+    display: flex;
+    justify-content: space-evenly;
+    
+    padding: 50px 0;
+  }
+
+
+
+  .colors{
+    display: flex;
+    text-align: center;
+    line-height: 100px;
+    gap: 30px;
+    font-size: large;
+  }
+
+  /* 메인컬러1 */
+  .color1{
+    width: 150px;
+    height: 100px;
+    background-color: #fcedc0;
+  }
+
+  /* 메인컬러2 */
+  .color2{
+    width: 150px;
+    height: 100px;
+    background-color: #573a1a;
+    color: white;
+  }
+
+  /* 메인컬러3 */
+  .color3{
+    width: 150px;
+    height: 100px;
+    background-color: #f4b6b6;
+    color: white;
+  }
+
+  .explain p{
+    line-height: 30px;
+  }
+
+  address{
+    text-align: center;
+  }
+
+  .scroll_to_top{
+    position: fixed;
+    right: 30px;
+    bottom: 40px;
+    font-size: 2rem;
+    display: scroll;
+}
+  
+  
+
+
+
+
+
+
+  
+@media screen and (max-width:768px) {
+
+  .nav{
+  flex-direction: column;
+  padding: 8px 24px;
+  }
+
+  .nav hr{
+      display: none;
+  }
+
+
+ .menu{
+  display: none;
+  flex-direction: column;
+  width: 100%;
+  gap: 10px;
+    }
+
+ .menu li{
+  width: 100%;
+  text-align: center;
+  padding: 5px 0;
+  font-size: medium;
+  border: none;
+ }
+
+ .nav-toggleBtn{
+  display: block;
+  
+ }
+
+ .menu.active {
+  display: flex;
+ }
+
+
+ .section1 h1{
+  font-size: 1.5rem;
+ }
+
+ .section2 h1{
+  font-size: 1.5rem;
+ }
+
+ .section3 h1{
+  font-size: 1.5rem;
+ }
+
+.section1 img{
+  max-width: 100%;
+  height: auto;
+}
+ 
+
+  .who{
+    flex-direction: column;
+    align-items: center;
+    gap: 0px;
+  }
+
+  .introduce{
+    text-align: center;
+  }
+
+  .section2 img{
+    max-width: 100%;
+    height: auto;
+    margin-top: 0px;
+  }
+
+  .explain-section{
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0;
+    gap: 10px;
+  }
+
+
+
+.explain-section img{
+  max-width: 100%;
+  height: auto;
+}
+ .section1 hr{
+  width: 5%;
+ }
+
+ .section2 hr{
+  width: 5%;
+ }
+
+ .section3 hr{
+  width: 5%;
+ }
+
+  .colors{
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+
+
+
+
+}

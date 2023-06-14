@@ -1,0 +1,341 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'IBMPlexSansKR-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/IBMPlexSansKR-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+*{font-family: 'IBMPlexSansKR-Regular';
+    }
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+}
+
+p{
+    font-size: 0.8rem;
+}
+
+a{ 
+    text-decoration: none;
+    color: black;
+}
+
+.nav{
+    text-align: center;
+}
+
+.nav img{
+    margin-bottom: -10px;
+}
+
+.nav hr{ 
+    /* 상단바 테두리 */
+    border: solid 1px gainsboro;
+    margin: 0;
+}
+
+.menu{
+    list-style-type:none;
+    padding-left: 0px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.menu li{
+    font-size: 1.2rem;
+    font-weight: bold;
+    display: inline;
+    padding: 0px 70px 0px 70px;
+    margin: 2px 0px 2px 0px;
+    border-left: 1px solid black ;
+}
+
+.nav-toggleBtn{
+     /* 토글버튼 */
+    display: none;
+    position: absolute;
+    right: 32px;
+    font-size: 24px;
+    margin:60px 0;
+}
+
+
+.section1{
+    padding: 30px 0;
+}
+.section1 h1{
+    text-align: center;
+}
+
+.section1 hr{
+    border: 1.2px solid black;
+    margin-top: -5px;
+    width: 2%;
+    margin-bottom: 50px;
+}
+
+.section-info{
+    background-color: #c9693b;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;  
+    
+}
+
+.section1-img{
+    display: contents;
+}
+
+
+.info{
+    color: white;
+    font-size: 1.2rem;
+    text-align: center;
+    font-weight: lighter;
+}
+
+.info p{
+    text-align: left;
+    padding-left: 13%;
+    font-size: 1.2rem;
+}
+
+.simbol{
+    margin-right: 20px;
+    color: white;
+}
+.bnt{
+    margin-top: 10px;
+    padding: 0.4rem 2rem;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    background-color: #ffdede;
+    cursor : pointer;
+    margin-right: 50px;
+
+}   
+
+
+.section1-2{
+    line-height: 40px;
+    text-align: center;
+}
+
+.section1-2 h4{
+    
+    margin-bottom: 100px;
+}
+
+
+
+.section2{
+    padding: 30px 0;
+}
+.section2 h1{
+    text-align: center;
+}
+
+.section2 hr{
+    border: 1.2px solid black;
+    margin-top: -5px;
+    width: 2%;
+    margin-bottom: 50px;
+}
+
+
+.menu1{
+    margin-top: -50px;
+    display: flex;
+    gap: 70px;   
+    align-items: center;  
+    justify-content: center;
+    animation-name: show;
+    animation-delay: 1.5s;
+    animation-duration: 1.5s ;
+    animation-fill-mode: backwards;
+    animation-timing-function: ease-out;
+    
+}
+
+.menu-info hr{
+    border: 1px solid #3c1a09;
+}
+
+.menu-info h2{
+    margin-top: -10px;
+    font-size: 1.7rem;
+}
+
+.menu-info p{
+    line-height: 1.7
+}
+
+.menu2{
+    background-color: #ffdede;
+    display: flex;
+    gap: 70px;   
+    align-items: center;  
+    justify-content: center;
+    animation-name: show;
+    animation-delay: 1.8s;
+    animation-duration: 1.5s ;
+    animation-fill-mode: backwards;
+    animation-timing-function: ease-out;
+    
+}
+
+.menu3{
+    display: flex;
+    gap: 70px;   
+    align-items: center;  
+    justify-content: center;
+    animation-name: show;
+    animation-delay: 2.1s;
+    animation-duration: 1.5s ;
+    animation-fill-mode: backwards;
+    animation-timing-function: ease-out;
+    
+}
+
+footer{   
+    margin-top: -88px;
+    text-align: center;
+    align-items: center; 
+    line-height: 40px;
+}
+
+footer > a > img{
+    margin-bottom: -15px;
+}
+
+.scroll_to_top{
+    position: fixed;
+    right: 30px;
+    bottom: 40px;
+    font-size: 2rem;
+    display: scroll;
+}
+
+
+
+
+@keyframes show {
+    from {
+        margin-left: 30px;
+        opacity: 0;
+    }
+    
+    to {
+        margin-left: 0px;
+        opacity: 1;
+    }
+}
+
+
+
+
+
+
+
+@media screen and (max-width:768px) {
+
+    .nav{
+    flex-direction: column;
+    padding: 8px 24px;
+    }
+
+    .nav hr{
+        display: none;
+    }
+
+
+   .menu{
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+      }
+
+   .menu li{
+    width: 100%;
+    text-align: center;
+    padding: 5px 0;
+    font-size: medium;
+    border: none;
+   }
+
+   .nav-toggleBtn{
+    display: block;
+    
+   }
+
+   .menu.active {
+    display: flex;
+   }
+
+   .section-info{
+    flex-direction: column;
+    gap: 100px;
+   }
+
+   .info{
+   margin-top: 80px;
+   }
+
+   .section-info>div>img{
+    max-width: 100%;
+    height: auto;
+  }
+
+
+    .menu1{
+        flex-direction: column-reverse;
+        gap: 0;
+    }
+
+    .menu2{
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .menu3{
+        flex-direction: column-reverse;
+        gap: 0;
+        margin-bottom: 80px;
+    }
+
+    .footer-image > img{
+        width: 500px;
+    }
+
+    .section1 hr{
+        width: 5%;
+    }
+
+    .section2 hr{
+        width: 5%;
+    }
+
+    footer{
+        padding-top: 10px;
+        background-color: #ffdede;
+    }
+
+    .footer-image > img{
+        display: none;
+    }
+
+
+}
+
+
+  
